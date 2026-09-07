@@ -1,0 +1,8 @@
+import fs from 'node:fs';
+import {story,characters} from '../src/story.js';
+import {getChoices,finishNode,nextNode,fresh,choose,applyNode} from '../src/engine.js';
+const visited=new Set(),order=[];function visit(id){if(visited.has(id))return;visited.add(id);order.push(id);const n=story[id];if(n.next)visit(n.next);for(const c of n.choices||[])visit(c.to);if(n.hub)for(const id of ['door','flowers','testimony','theory'])visit(id);}visit('arrival');
+let text='# 全シナリオ（ネタバレ）\n\n';for(const id of order){const n=story[id];text+=`\n## ${n.chapter} / ${id}\n\n`+n.lines.map(l=>(l.who?`${characters[l.who]?.name||l.who}：`:'')+l.text).join('\n\n')+'\n';if(n.choices)text+='\n選択：'+n.choices.map(c=>`${c.label} → ${c.to}`).join(' / ')+'\n';}
+fs.writeFileSync('docs/spoilers/FULL-SCENARIO.md',text);
+const paths={};for(const ending of ['cage','rain','morning']){const s=fresh();let chars=0,lines=0,guard=0;while(guard++<150){const n=story[s.node];chars+=n.lines.reduce((a,l)=>a+l.text.length,0);lines+=n.lines.length;finishNode(s);if(n.ending){paths[ending]={chars,lines,ending:n.ending};break;}const choices=getChoices(s);if(choices.length){let i=0;if(s.node==='theory')i=2;if(s.node==='before_choice')i=ending==='cage'?1:0;if(s.node==='doctor_offer')i=ending==='rain'?0:1;choose(s,i);}else applyNode(s,nextNode(s));}}
+const lines=Object.values(story).flatMap(n=>n.lines),metrics={scenes:Object.keys(story).length,paragraphs:lines.length,characters:lines.reduce((a,l)=>a+l.text.length,0),paths};fs.writeFileSync('docs/spoilers/metrics.json',JSON.stringify(metrics,null,2));console.log(JSON.stringify(metrics));

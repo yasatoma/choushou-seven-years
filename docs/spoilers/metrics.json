@@ -1,0 +1,22 @@
+{
+  "scenes": 58,
+  "paragraphs": 1281,
+  "characters": 45000,
+  "paths": {
+    "cage": {
+      "chars": 24817,
+      "lines": 719,
+      "ending": "cage"
+    },
+    "rain": {
+      "chars": 27628,
+      "lines": 787,
+      "ending": "rain"
+    },
+    "morning": {
+      "chars": 40021,
+      "lines": 1145,
+      "ending": "morning"
+    }
+  }
+}

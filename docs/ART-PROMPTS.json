@@ -1,0 +1,65 @@
+{
+  "note": "生成指示の要約。全て本作用の新規素材。人物は透過を指定して生成。",
+  "assets": [
+    {
+      "asset": "assets/manor.png",
+      "generator": "image_gen (built-in)",
+      "promptSummary": "嵐の孤島、洋館と鐘楼。16:9、暗い青と古金色、タイトルの余白。"
+    },
+    {
+      "asset": "assets/chapel.png",
+      "generator": "image_gen (built-in)",
+      "promptSummary": "夜の石造り礼拝堂、弔花・木の長椅子・綱、無人、流血なし。"
+    },
+    {
+      "asset": "assets/mio.png",
+      "generator": "image_gen (built-in)",
+      "promptSummary": "27歳女性、肩までの暗褐色髪、白ブラウスと青カーディガン、静かな表情。"
+    },
+    {
+      "asset": "assets/akari.png",
+      "generator": "image_gen (built-in)",
+      "promptSummary": "28歳女性、短い赤褐色ボブ、ワイン色の服とジャケット、カメラ。"
+    },
+    {
+      "asset": "assets/reiji.png",
+      "generator": "image_gen (built-in)",
+      "promptSummary": "32歳男性、黒髪、チャコール色スーツ、喪失と誇りのある表情。"
+    },
+    {
+      "asset": "assets/hall.png",
+      "generator": "image_gen (built-in)",
+      "promptSummary": "洋館の談話室、五つのカップと白い花の空席、雨窓と暖色照明。"
+    },
+    {
+      "asset": "assets/fuyuki.png",
+      "generator": "image_gen (built-in)",
+      "promptSummary": "46歳男性医師、白髪交じり、細い眼鏡、緑の上着と封筒。"
+    },
+    {
+      "asset": "assets/archive.png",
+      "generator": "image_gen (built-in)",
+      "promptSummary": "補修した旧書庫、焦げた壁と保管資料、現在進行の火や血はなし。"
+    },
+    {
+      "asset": "assets/shore.png",
+      "generator": "image_gen (built-in)",
+      "promptSummary": "嵐の後の小さな桟橋と旅客船、灰青色の海と夜明け。"
+    },
+    {
+      "asset": "assets/town.png",
+      "generator": "image_gen (built-in)",
+      "promptSummary": "本土の駅前通り、小雨、喫茶店と横断歩道、海は見えない。"
+    },
+    {
+      "asset": "assets/cafe.png",
+      "generator": "image_gen (built-in)",
+      "promptSummary": "本土の小さな喫茶店、二人分の紅茶、窓の向こうは建物。"
+    },
+    {
+      "asset": "assets/study.png",
+      "generator": "image_gen (built-in)",
+      "promptSummary": "装丁家の小さな仕事部屋、紙見本と本と封筒、街の雨窓。"
+    }
+  ]
+}

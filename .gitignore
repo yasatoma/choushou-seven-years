@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.npm-cache/
+test-results/
+*.zip
+
+# One-time local production helpers
+tools/adapt.mjs
+tools/connect.mjs
+tools/docfix.mjs
+tools/finalfix.mjs
+tools/polish.mjs
+tools/testfix.mjs
