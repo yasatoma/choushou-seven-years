@@ -1,0 +1,27 @@
+{
+  "url": "https://yasatoma.github.io/choushou-seven-years/",
+  "checks": [
+    "title, ruby, nameplate, large font, layout 1440x900",
+    "title, ruby, nameplate, large font, layout 390x844",
+    "title, ruby, nameplate, large font, layout 320x568",
+    "title, ruby, nameplate, large font, layout 844x390",
+    "manual save/load, ruby backlog, unread skip stop, transfer export and QR decode",
+    "transfer in independent browser with default typing",
+    {
+      "ending": "morning",
+      "paragraphs": 1145,
+      "seen": 1139
+    },
+    {
+      "ending": "rain",
+      "paragraphs": 789,
+      "seen": 783
+    },
+    {
+      "ending": "cage",
+      "paragraphs": 719,
+      "seen": 713
+    }
+  ],
+  "errors": []
+}

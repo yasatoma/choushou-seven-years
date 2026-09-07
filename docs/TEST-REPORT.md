@@ -14,3 +14,7 @@
 
 詳細ログとスクリーンショットはtest-results/。端末サイズの検証であり、実機iPhone/Android、Safari、音の聴感や第三者による読後評価は未実施。
 配布ビルド：31ファイルのハッシュ一致、素材13件（画像12枚＋アイコン）の読込、完成ビルドからの起動・本文ルビ・履歴を確認。JavaScript例外なし。ZIP内の構成を確認し、ネタバレ資料・開発依存・テスト結果が含まれないことを確認。ZIPは25,042,519 bytes。
+
+## GitHub Pages公開版（2026-09-07）
+
+https://yasatoma.github.io/choushou-seven-years/ にて4画面サイズ、本文ルビと名前欄、最大文字サイズ、保存・ロード、バックログ、既読スキップ、QR画像読取、独立ブラウザへの引き継ぎ、全3ENDの全文一致を確認。JavaScript例外・404なし。テストの本文比較はrtを除いた親文字で行うよう修正。実行ログはdocs/spoilers/PUBLIC-BROWSER-REPORT.json。
